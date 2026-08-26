@@ -4,6 +4,24 @@ import 'package:dart_application1/Lab5/LyThuyet.dart';
 import 'package:dart_application1/Lab5/ThucHanh.dart';
 import 'package:dart_application1/Lab5/DoAn.dart';
 
+String layDuongDanFile(String tenFileTrongLib) {
+  List<String> cacViTri = [
+    tenFileTrongLib,
+    'lib/$tenFileTrongLib',
+    'code/Week2/Week2_OOP/lib/$tenFileTrongLib',
+    'Week2_OOP/lib/$tenFileTrongLib',
+    Platform.script.resolve('../../../lib/$tenFileTrongLib').toFilePath(),
+    Platform.script.resolve('../../lib/$tenFileTrongLib').toFilePath(),
+  ];
+
+  for (String viTri in cacViTri) {
+    if (File(viTri).existsSync()) {
+      return viTri;
+    }
+  }
+  return tenFileTrongLib;
+}
+
 String nhapChuoi(String thongBao) {
   while (true) {
     stdout.write(thongBao);
@@ -11,7 +29,7 @@ String nhapChuoi(String thongBao) {
     if (input != null && input.trim().isNotEmpty) {
       return input.trim();
     }
-    print('Khong duoc de trong, vui long nhap lai!');
+    print('Không được để trống, vui lòng nhập lại!');
   }
 }
 
@@ -23,7 +41,7 @@ int nhapInt(String thongBao, {int min = 1}) {
     if (value != null && value >= min) {
       return value;
     }
-    print('Gia tri phai la so nguyen >= $min, vui long nhap lai!');
+    print('Giá trị phải là số nguyên >= $min, vui lòng nhập lại!');
   }
 }
 
@@ -35,16 +53,17 @@ double nhapDiem(String thongBao) {
     if (value != null && value >= 0 && value <= 10) {
       return value;
     }
-    print('Diem phai trong khoang tu 0 den 10, vui long nhap lai!');
+    print('Điểm phải trong khoảng từ 0 đến 10, vui lòng nhập lại!');
   }
 }
 
 Future<List<MonHoc>> readFile(String fileName) async {
   List<MonHoc> list = [];
   try {
-    File file = File(fileName);
+    String duongDanThuc = layDuongDanFile(fileName);
+    File file = File(duongDanThuc);
     if (!await file.exists()) {
-      print('File khong ton tai: $fileName');
+      print('File không tồn tại: $fileName');
       return list;
     }
 
@@ -54,20 +73,14 @@ Future<List<MonHoc>> readFile(String fileName) async {
       if (trimmed.isEmpty) continue;
 
       List<String> parts = trimmed.split('#');
-      if (parts.length < 4) {
-        print('Dong sai dinh dang: $line');
-        continue;
-      }
+      if (parts.length < 4) continue;
 
       String loai = parts[0].trim().toUpperCase();
       String ma = parts[1].trim();
       String ten = parts[2].trim();
       int? tc = int.tryParse(parts[3].trim());
 
-      if (tc == null) {
-        print('Loi so tin chi dong: $line');
-        continue;
-      }
+      if (tc == null) continue;
 
       if (loai == 'LT' && parts.length == 6) {
         double? tl = double.tryParse(parts[4].trim());
@@ -88,12 +101,10 @@ Future<List<MonHoc>> readFile(String fileName) async {
         if (gvhd != null && gvpb != null) {
           list.add(DoAn.fullPara(ma, ten, tc, gvhd, gvpb));
         }
-      } else {
-        print('Loai mon hoac so truong khong hop le: $line');
       }
     }
   } catch (e) {
-    print('Loi doc file: $e');
+    print('Lỗi đọc file: $e');
   }
   return list;
 }
@@ -114,60 +125,30 @@ double tinhTinChiTrungBinh(List<MonHoc> ds) {
   return tongTC / ds.length;
 }
 
-void nhapMonMoi(List<MonHoc> ds, {String? tenMacDinh}) {
-  print('\n--- NHAP THONG TIN MON HOC ---');
-  print('1. Mon Ly thuyet');
-  print('2. Mon Thuc hanh');
-  print('3. Mon Do an');
-  int loai = nhapInt('Chon loai mon (1-3): ', min: 1);
-
-  String ma = nhapChuoi('Nhap ma mon hoc: ');
-  String ten = tenMacDinh ?? nhapChuoi('Nhap ten mon hoc: ');
-  int tc = nhapInt('Nhap so tin chi (> 0): ', min: 1);
-
-  if (loai == 1) {
-    double tl = nhapDiem('Nhap diem tieu luan (0-10): ');
-    double ck = nhapDiem('Nhap diem cuoi ky (0-10): ');
-    ds.add(LyThuyet.fullPara(ma, ten, tc, tl, ck));
-  } else if (loai == 2) {
-    double kt1 = nhapDiem('Nhap diem KT1 (0-10): ');
-    double kt2 = nhapDiem('Nhap diem KT2 (0-10): ');
-    double kt3 = nhapDiem('Nhap diem KT3 (0-10): ');
-    ds.add(ThucHanh.fullPara(ma, ten, tc, kt1, kt2, kt3));
-  } else if (loai == 3) {
-    double gvhd = nhapDiem('Nhap diem GVHD (0-10): ');
-    double gvpb = nhapDiem('Nhap diem GVPB (0-10): ');
-    ds.add(DoAn.fullPara(ma, ten, tc, gvhd, gvpb));
-  } else {
-    print('Loai mon khong hop le.');
-  }
-}
-
 Future<void> main() async {
-  String filePath = 'lib/Lab5/monhoc.txt';
-  List<MonHoc> dsMonHoc = await readFile(filePath);
+  List<MonHoc> dsMonHoc = await readFile('Lab5/monhoc.txt');
 
-  print('=== CHUONG TRINH QUAN LY MON HOC (OOP DART) ===\n');
+  print('=== CHƯƠNG TRÌNH QUẢN LÝ MÔN HỌC (OOP DART) ===\n');
 
-  print('1. Danh sach mon hoc doc tu file:');
+  print('1. Danh sách môn học đọc từ file:');
   for (MonHoc mh in dsMonHoc) {
     print(mh);
   }
 
-  print('\n2. Kiem tra danh sach co dang tang dan theo ten:');
+  print('\n2. Kiểm tra danh sách có đang tăng dần theo tên:');
   if (daSapXepTheoTen(dsMonHoc)) {
-    print('=> Danh sach DANG duoc sap xep tang dan theo ten.');
+    print('=> Danh sách ĐANG được sắp xếp tăng dần theo tên.');
   } else {
-    print('=> Danh sach CHUA duoc sap xep tang dan theo ten.');
+    print('=> Danh sách CHƯA được sắp xếp tăng dần theo tên.');
   }
 
   dsMonHoc.sort((a, b) => a.soTinChi.compareTo(b.soTinChi));
-  print('\n3. Danh sach sau khi sap xep tang dan theo so tin chi:');
+  print('\n3. Danh sách sau khi sắp xếp tăng dần theo số tín chỉ:');
   for (MonHoc mh in dsMonHoc) {
     print(mh);
   }
 
-  print('\n4. Cac mon hoc co so tin chi cao nhat:');
+  print('\n4. Các môn học có số tín chỉ cao nhất:');
   if (dsMonHoc.isNotEmpty) {
     int maxTC = dsMonHoc.map((m) => m.soTinChi).reduce((a, b) => a > b ? a : b);
     List<MonHoc> dsMaxTC = dsMonHoc.where((m) => m.soTinChi == maxTC).toList();
@@ -177,5 +158,5 @@ Future<void> main() async {
   }
 
   double tcTB = tinhTinChiTrungBinh(dsMonHoc);
-  print('\n5. So tin chi trung binh cua danh sach: ${tcTB.toStringAsFixed(2)}');
+  print('\n5. Số tín chỉ trung bình của danh sách: ${tcTB.toStringAsFixed(2)}');
 }

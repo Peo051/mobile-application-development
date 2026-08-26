@@ -3,10 +3,29 @@ import 'package:dart_application1/Lab4/PhongThue.dart';
 import 'package:dart_application1/Lab4/PhongA.dart';
 import 'package:dart_application1/Lab4/PhongB.dart';
 
+String layDuongDanFile(String tenFileTrongLib) {
+  List<String> cacViTri = [
+    tenFileTrongLib,
+    'lib/$tenFileTrongLib',
+    'code/Week2/Week2_OOP/lib/$tenFileTrongLib',
+    'Week2_OOP/lib/$tenFileTrongLib',
+    Platform.script.resolve('../../../lib/$tenFileTrongLib').toFilePath(),
+    Platform.script.resolve('../../lib/$tenFileTrongLib').toFilePath(),
+  ];
+
+  for (String viTri in cacViTri) {
+    if (File(viTri).existsSync()) {
+      return viTri;
+    }
+  }
+  return tenFileTrongLib;
+}
+
 Future<List<PhongThue>> readFile(String fileName) async {
   List<PhongThue> list = [];
   try {
-    File file = File(fileName);
+    String duongDanThuc = layDuongDanFile(fileName);
+    File file = File(duongDanThuc);
     if (!await file.exists()) {
       print('File không tồn tại: $fileName');
       return list;
@@ -55,8 +74,7 @@ Future<List<PhongThue>> readFile(String fileName) async {
 }
 
 Future<void> main() async {
-  String filePath = 'lib/Lab4/phongthue.txt';
-  List<PhongThue> dsPhong = await readFile(filePath);
+  List<PhongThue> dsPhong = await readFile('Lab4/phongthue.txt');
 
   print('1. Toàn bộ danh sách phòng thuê:');
   for (PhongThue p in dsPhong) {

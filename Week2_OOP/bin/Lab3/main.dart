@@ -1,10 +1,29 @@
 import 'dart:io';
 import 'package:dart_application1/Lab1/SanPham.dart';
 
+String layDuongDanFile(String tenFileTrongLib) {
+  List<String> cacViTri = [
+    tenFileTrongLib,
+    'lib/$tenFileTrongLib',
+    'code/Week2/Week2_OOP/lib/$tenFileTrongLib',
+    'Week2_OOP/lib/$tenFileTrongLib',
+    Platform.script.resolve('../../../lib/$tenFileTrongLib').toFilePath(),
+    Platform.script.resolve('../../lib/$tenFileTrongLib').toFilePath(),
+  ];
+
+  for (String viTri in cacViTri) {
+    if (File(viTri).existsSync()) {
+      return viTri;
+    }
+  }
+  return tenFileTrongLib;
+}
+
 Future<List<SanPham>> readFile(String fileName) async {
   List<SanPham> list = [];
   try {
-    File file = File(fileName);
+    String duongDanThuc = layDuongDanFile(fileName);
+    File file = File(duongDanThuc);
     if (!await file.exists()) {
       print('File không tồn tại: $fileName');
       return list;
@@ -38,8 +57,7 @@ Future<List<SanPham>> readFile(String fileName) async {
 }
 
 Future<void> main() async {
-  String filePath = 'lib/Lab3/sanpham.txt';
-  List<SanPham> ds = await readFile(filePath);
+  List<SanPham> ds = await readFile('Lab3/sanpham.txt');
 
   print('Danh sách sản phẩm:');
   for (SanPham sp in ds) {
