@@ -1,0 +1,24 @@
+# Flutter and Dart build artifacts
+**/build/
+**/.dart_tool/
+**/.pub/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/ios/Flutter/.last_build_id
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+
+# Temporary and editor files
+**/tempCodeRunnerFile.*
+*.log
+*.tmp
+.history
+.vscode/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.BIN/
+.DS_Store
