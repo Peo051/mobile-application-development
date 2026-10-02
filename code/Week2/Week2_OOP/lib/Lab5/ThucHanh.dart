@@ -12,13 +12,13 @@ class ThucHanh extends MonHoc {
   }
 
   ThucHanh.fullPara(
-    String maMH,
-    String tenMH,
-    int soTinChi,
+    super.maMH,
+    super.tenMH,
+    super.soTinChi,
     double kt1,
     double kt2,
     double kt3,
-  ) : super.fullPara(maMH, tenMH, soTinChi) {
+  ) : super.fullPara() {
     this.kt1 = kt1;
     this.kt2 = kt2;
     this.kt3 = kt3;

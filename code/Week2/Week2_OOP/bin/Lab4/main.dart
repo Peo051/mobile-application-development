@@ -97,7 +97,7 @@ Future<void> main() async {
   }
 
   print('\n5. Danh sách tất cả phòng loại A:');
-  List<PhongThue> dsPhongA = dsPhong.where((p) => p is PhongA).toList();
+  List<PhongThue> dsPhongA = dsPhong.whereType<PhongA>().toList();
   for (PhongThue p in dsPhongA) {
     print(p);
   }

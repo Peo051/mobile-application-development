@@ -10,14 +10,14 @@ class CanBo extends NhanVien {
   }
 
   CanBo.fullPara(
-    String maNV,
-    String tenNV,
-    double heSoLuong,
-    String phongBan,
-    double soNgayLV,
+    super.maNV,
+    super.tenNV,
+    super.heSoLuong,
+    super.phongBan,
+    super.soNgayLV,
     String chucVu,
     double hsChucVu,
-  ) : super.fullPara(maNV, tenNV, heSoLuong, phongBan, soNgayLV) {
+  ) : super.fullPara() {
     this.chucVu = chucVu;
     this.hsChucVu = hsChucVu;
   }

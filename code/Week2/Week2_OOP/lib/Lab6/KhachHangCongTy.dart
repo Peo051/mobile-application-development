@@ -9,12 +9,12 @@ class KhachHangCongTy extends HoaDon {
   }
 
   KhachHangCongTy.fullPara(
-    String maKH,
-    String tenKH,
-    int soLuong,
-    double giaBan,
+    super.maKH,
+    super.tenKH,
+    super.soLuong,
+    super.giaBan,
     int soNhanVien,
-  ) : super.fullPara(maKH, tenKH, soLuong, giaBan) {
+  ) : super.fullPara() {
     this.soNhanVien = soNhanVien;
   }
 

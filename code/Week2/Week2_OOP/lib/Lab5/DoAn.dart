@@ -10,12 +10,12 @@ class DoAn extends MonHoc {
   }
 
   DoAn.fullPara(
-    String maMH,
-    String tenMH,
-    int soTinChi,
+    super.maMH,
+    super.tenMH,
+    super.soTinChi,
     double gvhd,
     double gvpb,
-  ) : super.fullPara(maMH, tenMH, soTinChi) {
+  ) : super.fullPara() {
     this.gvhd = gvhd;
     this.gvpb = gvpb;
   }

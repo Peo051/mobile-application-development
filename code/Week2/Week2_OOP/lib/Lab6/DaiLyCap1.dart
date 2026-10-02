@@ -9,12 +9,12 @@ class DaiLyCap1 extends HoaDon {
   }
 
   DaiLyCap1.fullPara(
-    String maKH,
-    String tenKH,
-    int soLuong,
-    double giaBan,
+    super.maKH,
+    super.tenKH,
+    super.soLuong,
+    super.giaBan,
     int thoiGianHopTac,
-  ) : super.fullPara(maKH, tenKH, soLuong, giaBan) {
+  ) : super.fullPara() {
     this.thoiGianHopTac = thoiGianHopTac;
   }
 

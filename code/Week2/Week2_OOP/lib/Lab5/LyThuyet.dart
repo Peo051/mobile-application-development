@@ -10,12 +10,12 @@ class LyThuyet extends MonHoc {
   }
 
   LyThuyet.fullPara(
-    String maMH,
-    String tenMH,
-    int soTinChi,
+    super.maMH,
+    super.tenMH,
+    super.soTinChi,
     double tieuLuan,
     double cuoiKy,
-  ) : super.fullPara(maMH, tenMH, soTinChi) {
+  ) : super.fullPara() {
     this.tieuLuan = tieuLuan;
     this.cuoiKy = cuoiKy;
   }

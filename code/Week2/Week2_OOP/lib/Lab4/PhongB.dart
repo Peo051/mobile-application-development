@@ -10,13 +10,13 @@ class PhongB extends PhongThue {
   }
 
   PhongB.fullPara(
-    String maPhong,
-    double soNguoi,
-    double soDien,
-    double soNuoc,
+    super.maPhong,
+    super.soNguoi,
+    super.soDien,
+    super.soNuoc,
     double giatUi,
     double soMay,
-  ) : super.fullPara(maPhong, soNguoi, soDien, soNuoc) {
+  ) : super.fullPara() {
     this.giatUi = giatUi;
     this.soMay = soMay;
   }

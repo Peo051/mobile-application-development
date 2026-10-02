@@ -8,12 +8,12 @@ class PhongA extends PhongThue {
   }
 
   PhongA.fullPara(
-    String maPhong,
-    double soNguoi,
-    double soDien,
-    double soNuoc,
+    super.maPhong,
+    super.soNguoi,
+    super.soDien,
+    super.soNuoc,
     double soNguoiThan,
-  ) : super.fullPara(maPhong, soNguoi, soDien, soNuoc) {
+  ) : super.fullPara() {
     this.soNguoiThan = soNguoiThan;
   }
 
