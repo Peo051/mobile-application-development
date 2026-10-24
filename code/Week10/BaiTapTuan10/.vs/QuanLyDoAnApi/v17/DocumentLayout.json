@@ -1,0 +1,176 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|e:\\learn\\ky5_26_27\\baitaptuan10\\quanlydoanapi\\quanlydoanapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|solutionrelative:quanlydoanapi\\quanlydoanapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|e:\\learn\\ky5_26_27\\baitaptuan10\\quanlydoanapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|solutionrelative:quanlydoanapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|e:\\learn\\ky5_26_27\\baitaptuan10\\quanlydoanapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|solutionrelative:quanlydoanapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|e:\\learn\\ky5_26_27\\baitaptuan10\\quanlydoanapi\\data\\quanlydoancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|solutionrelative:quanlydoanapi\\data\\quanlydoancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|e:\\learn\\ky5_26_27\\baitaptuan10\\quanlydoanapi\\controllers\\detaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|solutionrelative:quanlydoanapi\\controllers\\detaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|e:\\learn\\ky5_26_27\\baitaptuan10\\quanlydoanapi\\controllers\\chuyennganhcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|solutionrelative:quanlydoanapi\\controllers\\chuyennganhcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|e:\\learn\\ky5_26_27\\baitaptuan10\\quanlydoanapi\\entities\\loaidetai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|solutionrelative:quanlydoanapi\\entities\\loaidetai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|e:\\learn\\ky5_26_27\\baitaptuan10\\quanlydoanapi\\entities\\detai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|solutionrelative:quanlydoanapi\\entities\\detai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|e:\\learn\\ky5_26_27\\baitaptuan10\\quanlydoanapi\\entities\\chuyennganh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D354AFC9-4F2F-4480-8A32-2159C116CD58}|QuanLyDoAnApi\\QuanLyDoAnApi.csproj|solutionrelative:quanlydoanapi\\entities\\chuyennganh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuanLyDoAnApi",
+              "DocumentMoniker": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\QuanLyDoAnApi.csproj",
+              "RelativeDocumentMoniker": "QuanLyDoAnApi\\QuanLyDoAnApi.csproj",
+              "ToolTip": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\QuanLyDoAnApi.csproj",
+              "RelativeToolTip": "QuanLyDoAnApi\\QuanLyDoAnApi.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-24T09:45:38.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\Program.cs",
+              "RelativeDocumentMoniker": "QuanLyDoAnApi\\Program.cs",
+              "ToolTip": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\Program.cs",
+              "RelativeToolTip": "QuanLyDoAnApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T08:48:07.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuanLyDoAnContext.cs",
+              "DocumentMoniker": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\Data\\QuanLyDoAnContext.cs",
+              "RelativeDocumentMoniker": "QuanLyDoAnApi\\Data\\QuanLyDoAnContext.cs",
+              "ToolTip": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\Data\\QuanLyDoAnContext.cs",
+              "RelativeToolTip": "QuanLyDoAnApi\\Data\\QuanLyDoAnContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T09:37:52.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\appsettings.json",
+              "RelativeDocumentMoniker": "QuanLyDoAnApi\\appsettings.json",
+              "ToolTip": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\appsettings.json",
+              "RelativeToolTip": "QuanLyDoAnApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-24T09:37:42.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeTaiController.cs",
+              "DocumentMoniker": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\Controllers\\DeTaiController.cs",
+              "RelativeDocumentMoniker": "QuanLyDoAnApi\\Controllers\\DeTaiController.cs",
+              "ToolTip": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\Controllers\\DeTaiController.cs",
+              "RelativeToolTip": "QuanLyDoAnApi\\Controllers\\DeTaiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T07:32:56.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChuyenNganhController.cs",
+              "DocumentMoniker": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\Controllers\\ChuyenNganhController.cs",
+              "RelativeDocumentMoniker": "QuanLyDoAnApi\\Controllers\\ChuyenNganhController.cs",
+              "ToolTip": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\Controllers\\ChuyenNganhController.cs",
+              "RelativeToolTip": "QuanLyDoAnApi\\Controllers\\ChuyenNganhController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T07:32:54.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoaiDeTai.cs",
+              "DocumentMoniker": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\Entities\\LoaiDeTai.cs",
+              "RelativeDocumentMoniker": "QuanLyDoAnApi\\Entities\\LoaiDeTai.cs",
+              "ToolTip": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\Entities\\LoaiDeTai.cs",
+              "RelativeToolTip": "QuanLyDoAnApi\\Entities\\LoaiDeTai.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T07:31:17.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DeTai.cs",
+              "DocumentMoniker": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\Entities\\DeTai.cs",
+              "RelativeDocumentMoniker": "QuanLyDoAnApi\\Entities\\DeTai.cs",
+              "ToolTip": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\Entities\\DeTai.cs",
+              "RelativeToolTip": "QuanLyDoAnApi\\Entities\\DeTai.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T07:31:17.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChuyenNganh.cs",
+              "DocumentMoniker": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\Entities\\ChuyenNganh.cs",
+              "RelativeDocumentMoniker": "QuanLyDoAnApi\\Entities\\ChuyenNganh.cs",
+              "ToolTip": "E:\\Learn\\Ky5_26_27\\BaiTapTuan10\\QuanLyDoAnApi\\Entities\\ChuyenNganh.cs",
+              "RelativeToolTip": "QuanLyDoAnApi\\Entities\\ChuyenNganh.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T07:31:13.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
